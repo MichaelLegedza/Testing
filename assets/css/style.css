@@ -137,10 +137,13 @@
     }
 
     .radient-mask {
+        position: absolute;
         width: 100%;
         height: 1830px;
         top: 23%;
         clip-path: polygon(100% 23.5%, 100% 85.5%, 0% 87.4%, 0% 25.3%);
+        background: linear-gradient(180deg, #0078BC 0%, #A9FFC1 100%);
+        z-index: -1;
     }
 
     /* -- Content -- */
@@ -178,9 +181,12 @@
         max-width: 600px;
     }
     .radient-mask {
+        position: absolute;
         top: 93%;
         height: 1095px;
         clip-path: polygon(100% 22%, 100% 80%, 0% 84.4%, 0% 25.3%);
+        background: linear-gradient(180deg, #0078BC 0%, #A9FFC1 100%);
+        z-index: -1;
     }
     /* -- Intro -- */
     .intro {
@@ -217,7 +223,7 @@
         margin: 0px auto 26px;
     }
     .content__column img {
-        border-top-left-radius: 16px;
+        border-top-right-radius: 0px;
         border-bottom-left-radius: 16px;
     }
     .column__description {
